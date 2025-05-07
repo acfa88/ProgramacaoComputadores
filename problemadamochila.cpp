@@ -1,4 +1,38 @@
-
+//= ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+//= Problema da Mochila utilizando Algoritmos Genéticos
+//= O problema da mochila consiste em selecionar um subconjunto de objetos para maximizar o valor total,
+//= sem exceder a capacidade de peso da mochila. Neste exemplo, utilizamos a técnica de Algoritmos Genéticos,
+//= que busca otimizar a solução através da aplicação de operadores genéticos (cruzamento, mutação) sobre
+//= uma população inicial de soluções representadas em binário.
+//= 
+//= Mochila: Capacidade máxima de 20Kg
+//= Objetos: 16 objetos, cada um com peso e valor definidos
+//= Objetivo: Encontrar a combinação ótima de objetos que maximize o valor sem exceder o peso.
+//=
+//= Mais informações: https://en.wikipedia.org/wiki/Knapsack_problem
+//=
+//==== Resumo ============================================================================================================================
+//= A técnica de Algoritmos Genéticos utiliza operações de cruzamento e mutação para explorar o espaço de soluções.
+//= Cada solução é representada por uma sequência de 16 bits, onde cada bit indica a inclusão ou exclusão de um objeto.
+//= Cruzamento Ponto Único: Combina duas soluções trocando segmentos dos bits.
+//= Cruzamento Aritmético (AND): Combina duas soluções utilizando a operação AND.
+//= Mutação Simples: Altera um bit da solução atual.
+//= Mutação Dupla: Altera dois bits da solução atual.
+//========================================================================================================================================
+//****************************************************************************************************************************************
+//╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+//║ Algoritmos Genéticos: Uma abordagem para o Problema da Mochila                                                                        ║
+//╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
+//│ A técnica de Algoritmos Genéticos (AG) é baseada na teoria da evolução e seleção natural.                                             │
+//│ No contexto do problema da mochila, os AGs representam soluções como sequências binárias de 16 bits.                                  │
+//│ Cada bit indica a presença (1) ou ausência (0) de um objeto na mochila.                                                               │
+//│ O objetivo é maximizar o valor dos objetos na mochila sem exceder a capacidade de peso definida.                                      │
+//│ Os operadores genéticos utilizados são:                                                                                               │
+//│ - Cruzamento Ponto Único: Intercala segmentos de duas soluções.                                                                       │
+//│ - Cruzamento Aritmético: Realiza a operação lógica AND entre duas soluções.                                                           │
+//│ - Mutação Simples: Modifica um único bit da solução.                                                                                  │
+//│ - Mutação Dupla: Modifica dois bits da solução.                                                                                       │
+//└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 
 #include <iostream>
 using namespace std;
